@@ -17,7 +17,6 @@ spring:
     hikari:
       minimum-idle: 0
   redis:
-    # host: 193.112.100.103
     host: 127.0.0.1
     port: 6379
     password: dt20190228
@@ -37,7 +36,7 @@ redis:
 ribbon:
   eager-load:
     enabled: true
-    clients: netop-auth,netop-user-service
+    clients: netop-auth,netop-usersvc
   Httpclient:
     enabled: true
   OkHttp:
